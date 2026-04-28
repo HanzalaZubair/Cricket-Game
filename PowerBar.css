@@ -1,0 +1,44 @@
+.powerbar {
+  width: 300px;
+  height: 30px;
+  display: flex;
+  position: relative;
+  border: 2px solid white;
+  margin: 20px auto;
+  top: 20%;
+}
+
+.segment {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+}
+
+.wicket { background-color: red; }
+.zero { background-color: lightgray; }
+.one { background-color: white; }
+.two { background-color: gray; }
+.three { background-color: orange; }
+.four { background-color: yellow; }
+.six { background-color: green; }
+
+.slider {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  background-color: black;
+  animation: slide 2s linear infinite alternate;
+}
+
+@keyframes slide {
+    from { 
+        left: 0; 
+    }
+    to { 
+        left: 290px; 
+    } 
+}
